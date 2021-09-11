@@ -1,80 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>
-    Final Project - School mangement system - Sakti.s
-  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home page</title>
   <script src="https://www.momentcrm.com/embed"></script>
-  <script>
-    MomentCRM('init', {
-      'teamId': 'sakti_web',
-      'doChat': true,
-      'doTracking': true
-    });
-  </script>
+<script>
+  MomentCRM('init', {
+    'teamId': 'sakti_web',
+    'doChat': true,
+    'doTracking': true
+  });
+</script>
 </head>
 
 <body>
-  <!--about me-->
-  <!-- First Container -->
-  <a name="a"></a>
-  <a name="about"></a>
-  <center>
-    <br /> <br /> <br /> <br />
-    <div class="container-fluid bg-1 text-center">
-      <br />&nbsp;
-      <h2 id="l">Are You searching for a school ?</h2>
-      <a name="who"></a>
-      <h3 class="margin" id="demo" onclick="myFunction()"> Click to know About the School </h3>
-      <h4 id="lo"></h4>
-      <script>
-        function myFunction() {
-          document.getElementById("demo").innerHTML = "LILY JOICE SCHOOL";
-          document.getElementById("lo").innerHTML = "<a href=/signin id='sakti1'>Click me to know more About the School</a>"
-          document.getElementById("l").innerText = "";
-        }
-      </script>
 
-    </div>
-    <br/><br/></br/><br/></br/><br/>
-    <style>
-      body {
-        font: 20px Montserrat, sans-serif;
-        line-height: 1.5;
-      }
+  {{>navbar}}
 
-      .bg-1 {
-        color: #f5f6f7;
-        background-color: #000000;
-        /* Green */
-        color: #ffffff;
-        width: 500px;
-        border: 15px;
-        padding-bottom: 50px;
-        padding-top: 5px;
-        margin: 20px;
-        height: 200px;
-        border-radius: 20px;
-        border: rgb(255, 255, 255) 10px double;
-      }
+{{!--contact us start--}}
+{{>signin}}
+{{!--contact us ends--}}
 
-      #sakti1 {
-        text-decoration: none;
-        color: white;
-      }
-    </style>
-  </center>
-  
+  <script src="../jq/jquery.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+
 </body>
-<style>
-    body
-        {
-            background: linear-gradient(315deg, #af03ff, #ff0077);
-            color: white;
-            height: 100%;
-            background-repeat: no-repeat;
-        }
-</style>
 
 </html>
